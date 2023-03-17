@@ -15,7 +15,14 @@ VALUES  ("CEO", 200000, 1),
 
 INSERT INTO employees (firstName, lastName, role_id, manager_id)
 VALUES  ("Mike", "Welle", 1, null),
-        ("Sydnee", "Trammel", 2, 1),
-        ("George", "Costanza", 5, 1),
-        ("Jacob", "Wetterling", 7, 3);
-        
+        ("Chuck", "Knobloch", 2, 1),
+        ("Shane", "Mack", 7, 4),
+        ("Kirby", "Puckett", 5, 1),
+        ("Kent", "Hrbek", 6, 4),
+        ("Chili", "Davis", 3, 2),
+        ("Brian", "Harper", 8, 4),
+        ("Scott", "Leius", 4, 2),
+        ("Greg", "Gagne", 7, 4),
+        ("Dan", "Gladden", 6, 4);
+
+
