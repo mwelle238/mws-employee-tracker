@@ -3,9 +3,6 @@ const queries = require('./lib/Queries');
 const cTable = require('console.table');
 const mysql = require('mysql2');
 
-const PORT = process.env.PORT || 3001;
-
-
 // Connect to database
 const db = mysql.createConnection(
   {
@@ -46,12 +43,12 @@ async function init(){
         // db query to get a table of roles joined with departments
         db.query(queries.getRolesTable, async function (err, result){
             if (err) { console.error(err); return; }
-            empTable = result;
+            roleTable = result;
         });
         // db query to get a table of employees joined with roles, departments, and itself
         db.query(queries.getEmployeesTable, async function (err, result){
             if (err) { console.error(err); return; }
-            roleTable = result;
+            empTable = result;
         });
         // prompt user for an action
         input = await prompter.choicePrompt();
